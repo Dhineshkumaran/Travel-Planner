@@ -1,0 +1,21 @@
+.create{
+    background-color: var(--secondary-color) !important;
+    padding         : 0.6rem;
+    transition      : 0.5s;
+    cursor          : pointer;
+    border          : none;
+   
+    font-style      : italic;
+}
+Button{
+    background-color: var(--secondary-color) !important;
+    padding         : 0.6rem;
+    transition      : 0.5s;
+    cursor          : pointer;
+    border          : none;
+    
+    font-style      : italic;
+}
+h1,h2{
+    color:var(--secondary-color) !important;
+}
