@@ -13,8 +13,9 @@ import paymentRoute from "./routes/payment.js";
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
+const allowedOrigins = ['http://localhost:3000', 'http://52.62.74.137:3000'];
 const corsOptions = {
-    origin: '*',
+    origin: allowedOrigins,
     credentials: true
 };
 
