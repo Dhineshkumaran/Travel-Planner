@@ -20,7 +20,7 @@ const corsOptions ={
 mongoose.set("strictQuery",false);
 const connect = async()=>{
    try{
-      await mongoose.connect("mongodb://localhost:27017",{
+      await mongoose.connect("mongodb+srv://boomeshp:qfKApZEY3lGKtclD@cluster0.ndihl.mongodb.net/",{
          useNewUrlParser:true,
          useUnifiedTopology:true
       })
