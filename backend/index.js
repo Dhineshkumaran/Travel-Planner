@@ -41,7 +41,8 @@ app.use('/api/v1/auth',authRoute)
 app.use('/api/v1/review',reviewRoute)
 app.use('/api/v1/booking',bookingRoute)
 app.use('/api/v1/create-order',paymentRoute)
-app.listen(port, () => {
+
+app.listen(port, '0.0.0.0', () => {
    connect();
-   console.log('server listening on port', port)
-})
+   console.log(`Server is running on http://0.0.0.0:${port}`);
+});
