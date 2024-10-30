@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 const corsOptions = {
-    origin: "http://52.62.74.137:3000",
+    origin: '*',
     credentials: true
 };
 
@@ -42,7 +42,7 @@ app.use('/api/v1/review', reviewRoute);
 app.use('/api/v1/booking', bookingRoute);
 app.use('/api/v1/create-order', paymentRoute);
 
-app.listen(port, '52.62.74.137', () => {
+app.listen(port, '0.0.0.0', () => {
     connect();
-    console.log(`Server is running on http://52.62.74.137:${port}`);
+    console.log(`Server is running on http://0.0.0.0:${port}`);
 });
